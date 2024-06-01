@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <div class="root">
+    <div style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px 0px;">
+      <div class="container d-none d-lg-flex  align-items-center justify-content-between p-3">
+        <a href="#">
+          <img src="./imges/logo.svg" width="162.57px" height="24px" alt="Logo">
+        </a>
+        <form class="d-flex" style="width: 360px; border-radius: 21px;">
+          <button class="custom-search" type="submit" style="border-radius: 20px;">
+            <img alt="Search" src="./imges/search.svg" width="22" height="22">
+          </button>
+          <input class="form-control custom-input-search" type="search" placeholder="Search for your favorite groups in ATG" aria-label="Search" style="border-radius: 20px;">
+        </form>
+        <div class="d-flex align-items-center gap-1">
+          <button class="btn custom-btn-create p-0 m-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            create Account. 
+            <span class="text-primary fw-bold">It's Free!</span>
+          </button>
+          <div class="d-flex align-items-center">
+            <img class="rounded-circle" alt="Profile" src="./imges/arrow.svg">
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered position-relative">
+              <div class="modal-content">
+                <div class="modal-header custom-modal-header d-flex justify-content-center mb-4 ">Let's learn, share &amp; inspire each other with our passion for computer engineering. Sign up now 🤘🏼</div>
+                <div class="px-4">
+                  <div class="d-flex justify-content-between  align-items-center mb-4">
+                    <h4 class="d-flex fw-bold">Create Account</h4>
+                    <button class="btn">
+                      Already have an account?
+                      <span class="text-primary">Sign In</span>
+                    </button>
+                  </div>
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        <div class="d-flex flex-column gap-2">
+                          <div class="d-flex">
+                            <input type="text" class="form-control custom-input" placeholder="First Name">
+                            <input type="text" class="form-control custom-input" placeholder="Last Name">
+                          </div>
+                          <input type="email" class="form-control custom-input" placeholder="Email">
+                          <div class="d-flex align-items-center justify-content-between  position-relative">
+                            <input type="password" class="form-control custom-input" placeholder="Password">
+                          </div>
+                          <input type="password" class="form-control mb-4 custom-input" placeholder="Confirm password">
+                          <button class="btn btn-primary rounded-5 d-flex justify-content-center align-items-center mb-4" data-bs-dismiss="modal">Create Account</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0 position-relative custom-bg-container" style="background: url('./imges/back1.jpg') center center / cover no-repeat; height: 440px;">
+      <div class="overlay">
+
+      </div>
+      <div class="container d-flex flex-column h-100 background-text-home">
+        <div style="margin-top: 300px;">
+          <h1 class="text-white">Computer Engineering</h1>
+          <p class="text-white mb-5">142,765 Computer Engineers follow this</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-flex justify-content-between mx-auto align-items-center container sticky-top" style="max-width: 1040px; height: 68px; background: rgb(255, 255, 255); border-top: 1px solid rgba(0, 0, 0, 0.2);">
+      <ul class="nav my-2 nav-underline">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">All Posts (32)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Article</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Job</a>
+        </li>
+      </ul>
+      <div class="d-flex my-2 align-items-center">
+        <button class="btn" aria-label="write-post" style="background: rgb(242, 242, 242);">
+          Write Post
+          <img src="./imges/arrow.svg" alt="arrow down">
+        </button>
+        <button class="btn btn-primary ms-2 gap-2 d-flex align-items-center " aria-label="Join group" style="border: 0.8px solid rgb(152, 152, 153);">
+          <img src="./imges/people.svg" alt="Join group">
+          Join Group
+        </button>
+      </div>
+    </div>
+    <div class="mx-auto d-flex gap-5 justify-content-center" style="max-width: 1040px;">
+      <div class="posts-center position-relative ">
+        <div class="d-flex d-lg-none w-100 position-absolute top-4 align-items-center justify-content-between custom-main-button">
+          <div class="text-main-posts">
+            Posts(368)
+          </div>
+        </div>
+        <main class="d-flex flex-column gap-4 ">
+          <div class="d-flex flex-column border border-1 rounded-2" style="max-width: 692px; border-color: rgb(224, 224, 224); fill: rgb(255, 255, 255);">
+            <img src="./imges/nature.jpg" alt="Nature" class="imagePost">
+            <div class="p-4">
+              <h3 class="d-flex">
+                ✍️ Article
+              </h3>
+              <div class="d-flex gap-6 justify-content-between">
+                <h4>What if famous brands had regular fonts? Meet RegulaBrands!</h4>
+                <div class="btn align-self-start">
+                  <div class="dropdown">
+                    <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./imges/option.svg" alt="more details" height="28px" width="28px">
+                    </div>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <button class="dropdown-item" type="button">Edit</button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">Report</button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">option 3</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="d-flex align-items-center gap-5 list-unstyled "></ul>
+              <p>I've worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <img class="rounded-circle" alt="Profile" src="./imges/user1.jpg" width="48" height="48">
+                  <div class="d-flex flex-column">
+                    <div class="text-wrapper">Siddharth Goyal</div>
+                    <div class="d-lg-none">
+                      <img src="./imges/eye.svg" alt="watch">
+                      <span>1.4k views</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-none d-lg-block pe-4">
+                    <img src="./imges/eye.svg" alt="watch">
+                    <span>1.4k views</span>
+                  </div>
+                  <button class="btn d-flex align-items-center gap-2" style="background: rgb(237, 238, 240);">
+                    <img src="./imges/share.svg" alt="share">
+                    <span class="d-lg-none">Share</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column border border-1 rounded-2" style="max-width: 692px; border-color: rgb(224, 224, 224); fill: rgb(255, 255, 255);">
+            <img src="./imges/wood.jpg" alt="Nature" class="imagePost">
+            <div class="p-4">
+              <h3 class="d-flex">🔬️ Education</h3>
+              <div class="d-flex gap-6 justify-content-between">
+                <h4>Tax Benefits for Investment under National Pension Scheme launched by Government</h4>
+                <div class="btn align-self-start">
+                  <div class="dropdown">
+                    <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./imges/option.svg" alt="more details" height="28px" width="28px">
+                    </div>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <button class="dropdown-item" type="button">Edit</button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">Report</button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">option 3</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="d-flex align-items-center gap-5 list-unstyled "></ul>
+              <p>I've worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <img class="rounded-circle" alt="Profile" src="./imges/user2.jpg" width="48" height="48">
+                  <div class="d-flex flex-column"><div class="text-wrapper">Siddharth Goyal</div><div class="d-lg-none">
+                    <img src="./imges/eye.svg" alt="watch">
+                    <span>1.4k views</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-none d-lg-block pe-4">
+                <img src="./imges/eye.svg" alt="watch">
+                <span>1.4k views</span>
+              </div>
+              <button class="btn d-flex align-items-center gap-2" style="background: rgb(237, 238, 240);">
+                <img src="./imges/share.svg" alt="share">
+                <span class="d-lg-none">Share</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column border border-1 rounded-2" style="max-width: 692px; border-color: rgb(224, 224, 224); fill: rgb(255, 255, 255);">
+        <img src="./imges/car.jpg" alt="Nature" class="imagePost">
+        <div class="p-4">
+          <h3 class="d-flex">🗓️ Meetup</h3>
+          <div class="d-flex gap-6 justify-content-between">
+            <h4>Finance &amp; Investment Elite Social Mixer @Lujiazui</h4>
+            <div class="btn align-self-start">
+              <div class="dropdown"><div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./imges/option.svg" alt="more details" height="28px" width="28px">
+              </div>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">Edit</button></li>
+                <li><button class="dropdown-item" type="button">Report</button></li>
+                <li><button class="dropdown-item" type="button">option 3</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="d-flex align-items-center gap-5 list-unstyled ">
+          <li class="d-flex align-items-center gap-1">
+            <img src="./imges/date.svg" alt="date" width="20px" height="20px">
+            Fri, 12 Oct, 2018
+          </li>
+          <li class="d-flex align-items-center gap-1">
+            <img src="./imges/location.svg" alt="location" width="20px" height="20px">
+            Ahmedabad, India
+          </li>
+        </ul>
+        <button class="custom-post-link btn mb-4 fw-semibold" style="color: rgb(229, 97, 53); width: 100%;">
+          Visit WebSite
+        </button>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-2">
+            <img class="rounded-circle" alt="Profile" src="./imges/back1.jpg" width="48" height="48">
+            <div class="d-flex flex-column">
+              <div class="text-wrapper">Siddharth Goyal</div>
+              <div class="d-lg-none">
+                <img src="./imges/eye.svg" alt="watch">
+                <span>1.4k views</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-none d-lg-block pe-4">
+              <img src="./imges/eye.svg" alt="watch">
+              <span>1.4k views</span>
+            </div>
+            <button class="btn d-flex align-items-center gap-2" style="background: rgb(237, 238, 240);">
+              <img src="./imges/share.svg" alt="share">
+              <span class="d-lg-none">Share</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column border border-1 rounded-2" style="max-width: 692px; border-color: rgb(224, 224, 224); fill: rgb(255, 255, 255);">
+      <div class="p-4">
+        <h3 class="d-flex">💼️ Job</h3>
+        <div class="d-flex gap-6 justify-content-between">
+          <h4>Software Developer</h4>
+          <div class="btn align-self-start">
+            <div class="dropdown">
+              <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./imges/option.svg" alt="more details" height="28px" width="28px">
+              </div>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">Edit</button></li>
+                <li><button class="dropdown-item" type="button">Report</button></li>
+                <li><button class="dropdown-item" type="button">option 3</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="d-flex align-items-center gap-5 list-unstyled ">
+          <li class="d-flex align-items-center gap-1">
+            <img src="./imges/date.svg" alt="date" width="20px" height="20px">
+            Innovaccer Analytics Private Ltd.
+          </li>
+          <li class="d-flex align-items-center gap-1">
+            <img src="./imges/location.svg" alt="location" width="20px" height="20px">
+            Noida, India
+          </li>
+        </ul>
+        <button class="custom-post-link btn mb-4 fw-semibold" style="color: rgb(2, 184, 117); width: 100%;">Apply on Timejobs</button>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-2">
+            <img class="rounded-circle" alt="Profile" src="./imges/user3.jpg" width="48" height="48">
+            <div class="d-flex flex-column">
+              <div class="text-wrapper">Siddharth Goyal</div>
+              <div class="d-lg-none">
+                <img src="./imges/eye.svg" alt="watch">
+                <span>1.4k views</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-none d-lg-block pe-4">
+              <img src="./imges/eye.svg" alt="watch">
+              <span>1.4k views</span>
+            </div>
+            <button class="btn d-flex align-items-center gap-2" style="background: rgb(237, 238, 240);">
+              <img src="./imges/share.svg" alt="share">
+              <span class="d-lg-none">Share</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    </div>
+    <div class="container d-none d-lg-flex flex-column mt-4 ">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <img src="./imges/location.svg" alt="location">
+          <input type="text" placeholder="Enter Your Location" class="input-text">
+        </div>
+        <button class="btn">
+          <img src="./imges/edit.svg" alt="edit">
+        </button>
+      </div>
+      <hr class="my-1">
+      <div class="d-flex align-items-center gap-2 mb-4">
+        <img src="./imges/information.svg" alt="information" class="align-self-start">
+        <p class="location-info">Your location will help us serve better and extend a personalised experience.</p>
+      </div>
+      <div class="d-flex align-items-center gap-2 text-capitalize mb-3">
+        <img src="./imges/thumb.svg" alt="thumbs up">
+        <span class="text-recommended">RECOMMENDED GROUPS</span>
+      </div>
+      <div class="d-flex flex-column gap-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-2">
+            <img class="rounded-circle" alt="Profile" src="./imges/recGroup1.jpg" width="36" height="36">
+            <div class="text-wrapper">Leisure</div>
+          </div>
+          <a class="btn follow rounded-5" href="/">Follow</a>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-2">
+            <img class="rounded-circle" alt="Profile" src="./imges/recGroup2.jpg" width="36" height="36">
+            <div class="text-wrapper">Activism</div>
+          </div>
+          <a class="btn follow rounded-5" href="/">Follow</a>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-2">
+            <img class="rounded-circle" alt="Profile" src="./imges/recGroup3.jpg" width="36" height="36">
+            <div class="text-wrapper">MBA</div>
+          </div>
+          <a class="btn follow rounded-5" href="/">Follow</a>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-2">
+            <img class="rounded-circle" alt="Profile" src="./imges/recGroup4.jpg" width="36" height="36">
+            <div class="text-wrapper">Philosophy</div>
+          </div>
+          <a class="btn follow rounded-5" href="/">Follow</a>
+        </div>
+      </div>
+      <button class="btn text-end mt-5 text-primary text-capitalize">see more...</button>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
